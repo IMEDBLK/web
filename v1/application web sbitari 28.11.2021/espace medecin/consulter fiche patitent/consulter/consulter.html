@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>consulter</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='website.html'>SBITARI</a>
+            </div>
+            <nav>
+
+                <ul id='MenuItems'>
+                    
+                    <li><a href='#'>a propos</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">deconnecter</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>consulter fiche patient</button>
+                </div>
+              <input type="text" name="Name" class="input-field" placeholder="Donnez le nom" />
+            <input type="text" name="Surname" class="input-field" placeholder="Donnez le prénom" />
+            <input type="text" name="Situation" class="input-field" placeholder="Donnez la situation" />
+            <input type="double" name="CIN" class="input-field" placeholder="Donnez la CIN" />
+            <input type="double" name="Phone Number" class="input-field" placeholder="Donnez le numéro du telephone" />
+            <input type="email" name="Email" class="input-field" placeholder="Donnez l'email" />
+            <input type="text" name="Blood type" class="input-field" placeholder="Donnez le type du sang" />
+            <input type="text" name="Chronic diseases" class="input-field" placeholder="Donnez les maladies" />
+            <input type="text" name="Reason of consultation" class="input-field" placeholder="Donnez la raison du consultation" />
+            <input type="date" name="New appointement date" class="input-field"  />
+            <button type='submit'class='submit-btn'>ajouter une nouvelle consultation</button>
+</form>
+	   </div>
+        </div>
+    </div>
+   
+	
+</body>
+</html>

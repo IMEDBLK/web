@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>gestion des bilan</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='login.html'>SBITARI</a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    
+                    <li><a href='#'>A propos</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">deconnecter</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Gestion des bilans</button>
+                </div>
+              
+                <br/>
+                <button type='submit'class='submit-btn'>Ajouter une demande de bilan</button>
+            <br/>
+            <button type='submit'class='submit-btn'>Modifier bilan</button>
+            <br/>
+            <button type='submit'class='submit-btn'>Consulter le résultat du bilan</button>
+		 </form>
+	   </div>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
